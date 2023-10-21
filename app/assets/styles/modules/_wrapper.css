@@ -1,0 +1,30 @@
+.wrapper {
+    padding: 1.5rem;
+
+    @mixin atMedium {
+        padding: 3.125rem 6.25rem;
+    }
+}
+
+.wrapper-wider {
+    padding: 1.5rem;
+
+    @mixin atMedium {
+        padding: 3.125rem 12rem;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: auto;
+    @mixin atMedium {
+        flex: 1;
+        margin: 1.5rem;
+    }
+}

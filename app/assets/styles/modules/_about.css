@@ -1,0 +1,42 @@
+.about {
+    background-color: $black;
+    color: $white;
+
+    h3 {
+        color: $gold;
+        text-transform: uppercase;
+    }
+
+    &__section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__img {
+            flex: auto;
+            margin-bottom: 2rem;
+            @mixin atMedium {
+                flex: 1;
+                padding: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &__desc {
+            flex: auto;
+            @mixin atMedium {
+                flex: 1;
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    /*&__img {
+        @mixin atMedium {
+            display: block;
+            width: 50%;
+            margin: 3rem auto;
+        }
+    }*/
+}

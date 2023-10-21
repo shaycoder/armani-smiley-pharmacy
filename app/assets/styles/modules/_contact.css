@@ -1,0 +1,74 @@
+#contact {
+    background: $black;
+    color: $white;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__text {     
+        padding: 0 2rem 1.5rem 2rem;   
+        @mixin atMedium {
+            text-align: center;
+            padding: 0 10rem 2rem 10rem;
+        }
+    }
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        @mixin atMedium {
+            width: 40vw;
+        }
+        margin-bottom: 1rem;
+
+        label {
+            padding: .75rem 0;
+            font-weight: 500;
+        }
+
+        &__input {
+            border: none;
+            outline: none;
+            padding: .70rem 1rem;
+            font-size: .95rem;
+
+            @mixin atMedium {
+                font-size: 1.1rem;
+                padding: .75rem 1.2rem;
+            }
+            border-radius: 5px;
+            
+        }
+
+        &__btn {
+            margin-top: 3rem;
+            background: $yellow;
+            color: $black;
+            padding: 0.7rem 1.6rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: 500;
+            border: none;
+            transition: transform .5s ease-out;
+            cursor: pointer;
+            align-self: center;
+            text-transform: uppercase;
+            &:hover {
+                transform: scale(.9);
+            }
+        }
+    }
+
+    h2 {
+        text-transform: none;
+        margin: 1.5rem;
+        @mixin atMedium {
+            margin: 4rem;
+        }
+    }
+}

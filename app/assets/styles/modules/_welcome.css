@@ -1,0 +1,39 @@
+.welcome {
+    background: $black;
+    @mixin atMedium {
+        background: url('./assets/images/9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    color: $white;
+    @mixin forSmall {
+        border-bottom: 1px solid $gold;
+    }    
+
+    &__desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div {
+            flex: auto;
+            @mixin atMedium {
+                flex: 1;
+            }
+        }
+    }
+
+    h2 {
+        line-height: 1.5;
+    }
+
+    p,img {
+        margin-bottom: 2rem;
+        @mixin atMedium {
+            padding: 1rem;
+            margin-bottom: 0;
+        }
+    }
+}
