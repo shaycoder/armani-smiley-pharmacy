@@ -1,15 +1,6 @@
 .welcome {
-    background: $black;
-    @mixin atMedium {
-        background: url('./assets/images/9.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    color: $white;
-    @mixin forSmall {
-        border-bottom: 1px solid $gold;
-    }    
+    background: linear-gradient(45deg, #005061, $black, #005061);
+    color: $white; 
 
     &__desc {
         display: flex;

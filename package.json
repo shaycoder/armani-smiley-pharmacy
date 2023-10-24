@@ -21,6 +21,7 @@
   "homepage": "https://github.com/shaycoder/armani-smiley-pharmacy#readme",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "cursor-effects": "^1.0.12",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },

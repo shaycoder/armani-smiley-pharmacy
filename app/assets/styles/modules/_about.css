@@ -1,5 +1,5 @@
 .about {
-    background-color: $black;
+    background: linear-gradient(45deg, #005061, $black, #005061);
     color: $white;
 
     h3 {
@@ -31,12 +31,4 @@
             }
         }
     }
-
-    /*&__img {
-        @mixin atMedium {
-            display: block;
-            width: 50%;
-            margin: 3rem auto;
-        }
-    }*/
 }

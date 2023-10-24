@@ -1,5 +1,5 @@
 #contact {
-    background: $black;
+    background: linear-gradient(45deg, #005061, $black, #005061);
     color: $white;
 }
 

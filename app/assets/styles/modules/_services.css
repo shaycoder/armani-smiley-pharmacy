@@ -1,5 +1,5 @@
 .services {
-    background-color: $black;
+    background: linear-gradient(180deg, $black, #005061, $black);
     color: $white;
     &__title {
         text-align: center;
@@ -7,6 +7,8 @@
     }
 
     &__item {
+        background: url('./assets/images/2.jpg') no-repeat center;
+        background-size: cover;
         display: grid;
         grid-template-columns: 1fr;
         @mixin atMedium {
@@ -35,18 +37,44 @@
         }
     }
 
-    &__desc {        
+    &__desc {  
         @mixin forSmall {
             order: 2;
         }
+        padding: 1rem;
+        @mixin atMedium {
+            padding: 3rem;
+        }
 
         h3 {
-            font-size: 1.25rem;
+            font-size: 1.50rem;
             text-transform: capitalize;
-            color: $gold;
+            color: #005061;
             @mixin forSmall {
+                font-size: 1.25rem;
                 text-align: center;
             }
         }
+
+        p {
+            color: $black;
+        }
     }
 }
+
+.render {
+    background: linear-gradient(45deg, #005061, $black, #005061);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .render-item {
+    width: 100%;
+    object-fit: cover;
+    flex: auto;
+    @mixin atMedium {
+        flex: 1;
+    }
+  }
