@@ -8,6 +8,7 @@
 @import "modules/_welcome";
 @import "modules/_about";
 @import "modules/_services";
+@import "modules/_render";
 @import "modules/_contact";
 @import "modules/_footer";
 @import "aos/dist/aos.css";

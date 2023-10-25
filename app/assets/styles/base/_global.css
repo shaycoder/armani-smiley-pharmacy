@@ -45,7 +45,7 @@ li {
 h2 {
     text-transform: capitalize;
     font-size: 1.5rem;
-    color: $gold;
+    color: $yellow;
     text-align: center;
     @mixin atMedium {
         font-size: 2rem;
@@ -71,7 +71,7 @@ h2 {
     font-size: 1.5rem;
 
     a {
-       color: $gold;
+       color: #EE931E;
     }
 }
 
@@ -80,7 +80,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $gold;
+        color: $yellow;
     }
 }
 

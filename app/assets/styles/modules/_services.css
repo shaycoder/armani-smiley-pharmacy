@@ -61,20 +61,3 @@
         }
     }
 }
-
-.render {
-    background: linear-gradient(45deg, #005061, $black, #005061);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  
-  .render-item {
-    width: 100%;
-    object-fit: cover;
-    flex: auto;
-    @mixin atMedium {
-        flex: 1;
-    }
-  }
